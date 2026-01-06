@@ -1,16 +1,14 @@
-function solve(){
-    let val=parseInt(document.getElementById("main_box").value);
-    if (isNaN(val)) {
-        document.getElementById("message").innerText = "Please enter a number";
-        return;
+function toggle(){
+    let password=document.getElementById("main_box").type;
+    let btns=document.getElementById("btn").innerText;
+    if(password==="password"){
+        document.getElementById("main_box").type="text";
+        document.getElementById("btn").innerText="Hide";
     }
-    var flag=true;
-    if(val % 2==1){
-        flag=false;
+    else{
+        document.getElementById("main_box").type="password"; // text format
+        document.getElementById("btn").innerText="Show";
     }
-    if (flag==true) {
-        document.getElementById("message").innerText = "Even Number";
-    } else {
-        document.getElementById("message").innerText = "Odd Number";
-    }
+
+
 }
