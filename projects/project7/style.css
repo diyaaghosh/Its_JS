@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+}
+
+
+#container{
+    background: #ffffff;
+    width: 360px;
+    padding: 35px 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    animation: fadeIn 0.8s ease;
+}
+
+
+#container h2{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input box */
+#main_box{
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1.5px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#main_box:focus{
+    border-color: #c33764;
+    box-shadow: 0 0 6px rgba(195,55,100,0.5);
+}
+
+/* Button */
+#btn{
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #c33764, #1d2671);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+
+#message{
+    margin-top: 18px;
+    font-size: 15px;
+    color: #444;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
