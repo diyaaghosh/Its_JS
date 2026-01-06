@@ -1,0 +1,17 @@
+
+body{
+    background-color: rgb(246, 244, 244);
+    color: rgb(5, 0, 0);
+}
+.dark{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.red{
+    background-color: red;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+}
