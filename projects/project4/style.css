@@ -1,0 +1,45 @@
+
+
+body {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 15px;
+}
+
+#main_box {
+    width: 260px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+#btn {
+    padding: 10px 18px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #222;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#btn:hover {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+#message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
