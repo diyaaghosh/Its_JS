@@ -1,0 +1,84 @@
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 260px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+#panel {
+    height: 50px;
+    background: #1e1e1e;
+    color: #ffffff;
+    font-size: 22px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+button {
+    width: 55px;
+    height: 45px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #e9ecef;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #d6d9dc;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Operator buttons */
+button[onclick*="add"],
+button[onclick*="sub"],
+button[onclick*="mult"],
+button[onclick*="div"] {
+    background: #4f46e5;
+    color: #ffffff;
+}
+
+button[onclick*="add"]:hover,
+button[onclick*="sub"]:hover,
+button[onclick*="mult"]:hover,
+button[onclick*="div"]:hover {
+    background: #4338ca;
+}
+
+/* Equal button */
+button[onclick*="solve"] {
+    background: #16a34a;
+    color: #ffffff;
+}
+
+button[onclick*="solve"]:hover {
+    background: #15803d;
+}
+
+/* Clear button */
+button[onclick*="clear"] {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+button[onclick*="clear"]:hover {
+    background: #b91c1c;
+}
